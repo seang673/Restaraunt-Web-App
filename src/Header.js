@@ -1,12 +1,29 @@
 
 import React from 'react';
+import "../src/styles.css";
+
+import bruschetta from "../src/Images/bruschetta.jpg";
 
 const header = () => {
     return (
         <header>
-            <img src="Logo.370f832fad423c516d56.png"></img>
+        <div class = "two-container">
+            <div class="grid-item">
+                <h1>Little Lemon</h1>
+                <h2>Chicago</h2>
+                <p>We are a family owned Mediterranean restaraunt,
+                    focused on traditional recipes served with a modern
+                    twist.</p>
+            </div>
+
+        <div class="grid-item">
+            <img src= {bruschetta} alt="Bruschetta" width="300" length="300"></img>
+
+        </div>
+
+        </div>
         </header>
     );
 
 };
-export default Header;
+export default header;

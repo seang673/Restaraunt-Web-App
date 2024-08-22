@@ -1,20 +1,18 @@
 import React from 'react';
 import "../src/styles.css";
+import dalogo from "../src/Images/LLLogo.jpg";
 
 const Footer = () => {
   return (
 
     <footer>
-      <div class="four-container">
+    <div class="footer-container">
 
-      <div class="grid-item">
-      <img src="barelemons.png" width="40" height="40"></img>
-
+      <div class="footer-item">
+        <img src={dalogo} alt="Little Lemon Logo" width="300" height="250"></img>
       </div>
 
-
-      <div class="grid-item">
-
+      <div class="footer-item">
         <p>Contact Info: </p>
         <pre>
           Address: 123 Main Street Anytown, USA 12345<br></br>
@@ -26,29 +24,27 @@ const Footer = () => {
       </div>
 
 
-      <div class="grid-item">
-
+      <div class="footer-item">
         <p>Get to Know Us More.</p>
         <pre>
-          About<br></br>
-          Careers<br></br>
-          Press Releases<br></br>
-          Exclusive Recipes<br></br>
-          Our Kitchen<br></br>
+          <li>About</li>
+          <li>Careers</li>
+          <li>Press Releases</li>
+          <li>Exclusive Recipes</li>
+          <li>Our Kitchen</li>
         </pre>
 
       </div>
 
-
-      <div class="grid-item">
-
+      <div class="footer-item">
         <p>Connect With Us:</p>
         <pre>
 
-          Facebook<br></br>
-          Instagram<br></br>
-          LinkedIn<br></br>
-          X<br></br>
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>LinkedIn</li>
+          <li>X</li>
+
         </pre>
 
      </div>

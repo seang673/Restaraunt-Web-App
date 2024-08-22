@@ -1,12 +1,54 @@
-.seven-container {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr); /* Four equal columns */
-    gap: 10px; /* Space between items */
+h1{
+    color: rgb(156, 156, 116);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+pre{
+    color:#f9f9f9;
+    font-family: Georgia, serif;
+}
+
+p{
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+img{
+    border-radius: 8px; /* Rounded corners */
+}
+
+img.responsive {                /*Ensuring images scale down on smaller screens*/
+    max-width: 100%;
+    height: auto;
   }
 
-  .grid-item {
+.grid-item {
     padding: 20px;
     text-align: center;
+}
+
+
+.nav-container {
+    display: grid;
+    background-color: #ffffff;
+    grid-template-columns: repeat(7, 1fr); /* Seven equal columns */
+    gap:5px;
+
+}
+
+.nav-item {
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-image {
+    padding:5px;
+}
+
+.header-container {
+    display: grid;
+    background-color: #d6d974;
+    grid-template-columns: repeat(2, 1fr); /* Three equal columns */
+    gap: 15px; /* Space between items */
 }
 
 
@@ -16,18 +58,160 @@
     gap: 10px; /* Space between items */
   }
 
-  .three-container {
+  .highlights-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    background-color: #fcfffb;
+    grid-template-rows: auto 1fr; /* Two equal columns */
     gap: 10px; /* Space between items */
+    .h1 {
+        grid-row: 1; /* Place in the first row */
+      }
+      .highlights-item1 {
+        grid-row: 2; /* Place in the second row */
+      }
+      .highlights-item2 {
+        grid-row: 2; /* Also place in the second row */
+      }
+      .highlights-item3 {
+        grid-row: 2; /* Place in the second row */
+      }
   }
+
+
+.highlights-item1 {
+
+    padding: 20px;
+    text-align: left;
+}
+.highlights-item2 {
+
+    padding: 20px;
+    text-align: left;
+}
+.highlights-item3 {
+
+    padding: 20px;
+    text-align: left;
+}
+
 
 
 .two-container {
     display: grid;
-    background-color: #1d7807;
+    background-color: #fcfffb;
     grid-template-columns: repeat(2, 1fr); /* Three equal columns */
     gap: 15px; /* Space between items */
 }
 
 
+.testimonials-container {
+    display: grid;
+    background-color: #657f35;
+    grid-template-rows: auto 1fr; /* Two equal columns */
+    gap: 10px; /* Space between items */
+    .h1 {
+        grid-row: 1; /* Place in the first row */
+      }
+      .testimonials-item1 {
+        grid-row: 2; /* Place in the second row */
+      }
+      .testimonials-item2 {
+        grid-row: 2; /* Also place in the second row */
+      }
+      .testimonials-item3 {
+        grid-row: 2; /* Place in the second row */
+      }
+      .testimonials-item4 {
+        grid-row: 2; /* Also place in the second row */
+      }
+}
+
+.testimonials-item1 {
+    background-color: #b0afaf;
+    padding: 20px;
+    text-align: left;
+}
+.testimonials-item2 {
+    background-color: #b0afaf;
+    padding: 20px;
+    text-align: left;
+}
+.testimonials-item3 {
+    background-color: #b0afaf;
+    padding: 20px;
+    text-align: left;
+}
+.testimonials-item4 {
+    background-color: #b0afaf;
+    padding: 20px;
+    text-align: left;
+}
+
+.mini-testimonials-container {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.about-container {
+    display: grid;
+    background-color:#fcfffb;
+    grid-template-rows: auto 1fr; /* Two equal columns */
+    gap: 10px; /* Space between items */
+
+      .about-item1 {
+        grid-row: 2; /* Place in the second row */
+      }
+      .about-item2 {
+        grid-row: 2; /* Also place in the second row */
+      }
+
+}
+
+.about-item1 {
+    padding: 20px;
+    text-align: center;
+}
+.about-item2 {
+    padding: 20px;
+    text-align: left;
+}
+
+
+.relative-container{                  /*For overlapping images*/
+    position: relative;
+}
+
+.image1 {                 /*Image for the About Section*/
+    position: relative;
+    height: 150px;
+    width: 250px;
+  }
+
+.image2 {                  /* Image for the About Section */
+    position: absolute;
+    top: 110px;
+    left: 340px;
+    height: 150px;
+    width: 250px;
+
+}
+
+.footer-container{
+        display: grid;
+        background-color: #b2c72f;
+        grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+        gap: 10px; /* Space between items */
+}
+
+.footer-image{
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-item {
+    padding: 40px;
+    text-align: center;
+
+}

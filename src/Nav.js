@@ -6,15 +6,17 @@ const Nav = () => {
   return (
 
       <nav>
-        <div class = "seven-container">
-        <img src = {lllogo2} alt=" Little Lemon Logo" width="150" length="150"></img>
+        <div class = "nav-container">
 
-          <a href="/home" >Home</a>
-          <a href="/about">About</a>
-          <a href="/menu">Menu</a>
-          <a href="/reservations">Reservations</a>
-          <a href="/orderonline">Order Online</a>
-          <a href="/login">Login</a>
+
+          <div class="nav-image"><img src = {lllogo2} alt=" Little Lemon Logo" width="150" length="150"></img></div>
+
+          <div class="nav-item"><a href="/home" >Home</a></div>
+          <div class="nav-item"><a href="/about">About</a></div>
+          <div class="nav-item"><a href="/menu">Menu</a></div>
+          <div class="nav-item"><a href="/reservations">Reservations</a></div>
+          <div class="nav-item"><a href="/orderonline">Order Online</a></div>
+          <div class="nav-item"><a href="/login">Login</a></div>
 
         </div>
       </nav>

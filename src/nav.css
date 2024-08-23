@@ -1,0 +1,21 @@
+
+.container {
+    display: flex;
+    align-items: center; /* Vertically align items */
+  }
+  .nav-img {
+    max-width: 140px; /* Adjust image size */
+    margin-right: 80px; /* Add spacing between image and list */
+  }
+  .nav-ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Center the list horizontally */
+  }
+
+  .nav-li{
+  display: inline-block; /* Display list items horizontally */
+    margin-right: 100px; /* Add spacing between list items */
+  }
+
+

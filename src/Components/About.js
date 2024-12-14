@@ -1,7 +1,7 @@
 import React from 'react';
-import "../src/styles.css";
-import rb from "../src/Images/restarauntback.jpg";
-import rf from "../src/Images/restarauntfront.jpg";
+import "/Users/seang/CouseraProj/my-app/src/App.css";
+import rb from "/Users/seang/CouseraProj/my-app/src/Images/restarauntback.jpg";
+import rf from "/Users/seang/CouseraProj/my-app/src/Images/restarauntfront.jpg";
 
 const About = () => {
   return (

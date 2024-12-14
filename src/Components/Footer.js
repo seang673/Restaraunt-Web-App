@@ -1,6 +1,6 @@
 import React from 'react';
-import "../src/styles.css";
-import dalogo from "../src/Images/LLLogo.jpg";
+import "/Users/seang/CouseraProj/my-app/src/styles.css";
+import dalogo from "/Users/seang/CouseraProj/my-app/src/Images/LLLogo.jpg";
 
 const Footer = () => {
   return (

@@ -1,8 +1,8 @@
 import React from 'react';
-import "../src/styles.css";
-import gs from "../src/Images/Greek-Salad.jpg";
-import brus from "../src/Images/bruschetta.jpg";
-import lemonc from "../src/Images/LemonCake.jpg";
+import "/Users/seang/CouseraProj/my-app/src/App.css";
+import gs from "/Users/seang/CouseraProj/my-app/src/Images/Greek-Salad.jpg";
+import brus from "/Users/seang/CouseraProj/my-app/src/Images/bruschetta.jpg";
+import lemonc from "/Users/seang/CouseraProj/my-app/src/Images/LemonCake.jpg";
 
 
 const Highlights = () => {

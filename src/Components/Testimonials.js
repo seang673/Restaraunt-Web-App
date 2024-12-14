@@ -1,9 +1,9 @@
 import React from 'react';
-import "../src/styles.css";
-import three from "../src/Images/three stars.png";
-import four from "../src/Images/four stars.png";
-import five from "../src/Images/five stars.jpg";
-import profile from "../src/Images/profile.png";
+import "/Users/seang/CouseraProj/my-app/src/App.css";
+import three from "/Users/seang/CouseraProj/my-app/src/Images/three stars.png";
+import four from "/Users/seang/CouseraProj/my-app/src/Images/four stars.png";
+import five from "/Users/seang/CouseraProj/my-app/src/Images/five stars.jpg";
+import profile from "/Users/seang/CouseraProj/my-app/src/Images/profile.png";
 
 
 const Testimonials = () => {

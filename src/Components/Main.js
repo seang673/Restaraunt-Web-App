@@ -15,7 +15,7 @@ const Main = () => {
         }
     }
 
-    const fetchAPI = function(date){
+     const fetchAPI = function(date){
         let result = [];
         let random = seedRandom(date.getDate());
         for(let i = 17; i <= 23; i++)
@@ -43,6 +43,7 @@ const Main = () => {
 
     const navigate = useNavigate();
 
+
     function submitForm (formData){
         if(submitAPI(formData)){
             navigate("/confirmed");
@@ -60,6 +61,7 @@ const Main = () => {
             </Routes>
         </main>
     )
-}
 
+}
 export default Main;
+

@@ -9,6 +9,7 @@ const BookingForm = (props) => {
     const [guests, setGuests] = useState(1);
     const [occasion, setOccasion] = useState('');
 
+
     const handleDateChange = (event) => {
       setDate(event);
       props.dispatch(event);
@@ -20,6 +21,8 @@ const BookingForm = (props) => {
       // Handle form submission logic here
 
     };
+
+
 
     return (
       <header>
@@ -41,9 +44,13 @@ const BookingForm = (props) => {
                         id="res-time" value={times} onChange={(e) => setTimes(e.target.value)}>
                           <option value="">Select a time</option>
                           {
-                            props.availableTimes.availableTimes.map(availableTimes =>
-                            {return <option key=
-                              {availableTimes}>{availableTimes}</option>})
+                            //Maps out array with time options if properties below are already defined//
+                            props.availableTimes && props.availableTimes.availableTimes ? (
+
+                              props.availableTimes.availableTimes.map((availableTime) =>
+                              {return <option key={availableTime} value={availableTime}>{availableTime}</option>;
+                              })
+                            ) : (<option disabled>No available times</option>)
                           }
                       </select>
                   </div>
@@ -73,6 +80,7 @@ const BookingForm = (props) => {
                             <option value="Anniversary">Anniversary</option>
                           </select>
                       </div>
+
                       {/*Submit Button*/}
                       <div className='buttonReceive'>
                         <input aria-label='On Click' type="submit" value={"Make Your Reservation"} />

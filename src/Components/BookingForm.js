@@ -44,7 +44,7 @@ const BookingForm = (props) => {
                         id="res-time" value={times} onChange={(e) => setTimes(e.target.value)}>
                           <option value="">Select a time</option>
                           {
-                            //Maps out array with time options if properties below are already defined//
+                            //Maps out array with time options if the properties below are already defined//
                             props.availableTimes && props.availableTimes.availableTimes ? (
 
                               props.availableTimes.availableTimes.map((availableTime) =>

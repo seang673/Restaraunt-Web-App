@@ -27,11 +27,11 @@ const Footer = () => {
       <div class="footer-item">
         <p>Get to Know Us More.</p>
         <pre>
-          <li>About</li>
-          <li>Careers</li>
-          <li>Press Releases</li>
-          <li>Exclusive Recipes</li>
-          <li>Our Kitchen</li>
+          <li><a href="">About</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Press Releases</a></li>
+          <li><a href="">Exclusive Recipes</a></li>
+          <li><a href="">Our Kitchen</a></li>
         </pre>
 
       </div>
@@ -40,10 +40,10 @@ const Footer = () => {
         <p>Connect With Us:</p>
         <pre>
 
-          <li>Facebook</li>
-          <li>Instagram</li>
-          <li>LinkedIn</li>
-          <li>X</li>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">X</a></li>
+          <li><a href="">TikTok</a></li>
 
         </pre>
 

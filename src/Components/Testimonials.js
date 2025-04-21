@@ -42,7 +42,7 @@ const Testimonials = () => {
         </div>
 
         <div class="testimonials-item3">
-        <img src={five} alt="five stars" width="200" height="80"></img>
+        <img src={five} alt="five stars" id="Profile-Pic" width="200" height="80"></img>
             <div class ="mini-testimonials-item">
                 <img src={profile} alt="Profile Pic" width="50" height="50"></img>
                 <p>Jacqueline</p>
@@ -52,7 +52,7 @@ const Testimonials = () => {
         </div>
 
         <div class="testimonials-item4">
-        <img src={four} alt="four stars" width="200" height="90"></img>
+        <img src={four} alt="four stars" id="star-rating" width="200" height="90"></img>
             <div class ="mini-testimonials-item">
                 <img src={profile} alt="Profile Pic" width="50" height="50"></img>
                 <p>Robin</p>

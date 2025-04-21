@@ -21,10 +21,10 @@ const Main = () => {
         for(let i = 17; i <= 23; i++)
         {
             if(random() < 0.5){
-                result.push(i + ':00 ');
+                result.push(i%12 + ':00 PM ');
             }
             if(random() > 0.5){
-                result.push(i + ':30');
+                result.push(i%12 + ':30 PM ');
             }
         }
         return result;

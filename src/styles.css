@@ -304,17 +304,54 @@ img.responsive {                /*Ensuring images scale down on smaller screens*
 .footer-container{
         display: grid;
         background-color: #b2c72f;
-        grid-template-columns: repeat(4, 1fr); /* Four equal columns */
-        gap: 10px; /* Space between items */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px; /* Space between items */
+        padding: 20px;
+        text-align: center;
+}
+
+/* Footer logo */
+.footer-logo {
+  display: flex;
+  justify-content: center;
 }
 
 .footer-image{
-    padding: 20px;
-    text-align: center;
+    width: 80%;
+    max-width: 250px;
+    height: auto;
 }
 
 .footer-item {
-    padding: 40px;
-    text-align: center;
-
+    padding: 20px;
 }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li{
+  margin: 5px 0;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr; /* Stack items */
+        text-align: center;
+    }
+
+    .footer-image {
+        width: 60%;
+    }
+
+    .footer-item {
+        padding: 15px;
+    }
+
+    ul li {
+        font-size: 1.2rem;
+    }
+}
+

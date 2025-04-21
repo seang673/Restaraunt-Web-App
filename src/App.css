@@ -13,6 +13,13 @@
   }
 }
 
+@media screen and (max-width:768px) {
+  .App{
+    width: 100%;
+    padding: 10px;
+  }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -159,6 +166,7 @@ button {
 h1{
     color: rgb(102, 102, 28);
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
 }
 
 pre{
@@ -168,13 +176,14 @@ pre{
 
 p{
     font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
 }
 
 img{
     border-radius: 8px; /* Rounded corners */
 }
 
-img.responsive {                /*Ensuring images scale down on smaller screens*/
+img.responsive {       /*Ensuring images scale down on smaller screens*/
     max-width: 100%;
     height: auto;
   }
@@ -216,35 +225,30 @@ img.responsive {                /*Ensuring images scale down on smaller screens*
     background-color: #dbe7c0;
     grid-template-rows: auto 1fr; /* Two equal columns */
     gap: 10px; /* Space between items */
-    .h1 {
-        grid-row: 1; /* Place in the first row */
-      }
-      .highlights-item1 {
-        grid-row: 2; /* Place in the second row */
-      }
-      .highlights-item2 {
-        grid-row: 2; /* Also place in the second row */
-      }
-      .highlights-item3 {
-        grid-row: 2; /* Place in the second row */
-      }
+    padding:20px;
+    text-align:center;
+
   }
 
+.highlights-container h1 {
+    grid-row: 1; /* Place in the first row */
+    }
+.highlights-item1, .highlights-item2, .highlights-item3 {
+    grid-row: 2; /* Place in the second row */
+    }
 
-.highlights-item1 {
+/* Make grid responsive */
+@media screen and (max-width: 768px) {
+  .highlights-container {
+      grid-template-rows: auto auto auto auto; /* Stack items */
+      grid-template-columns: 1fr; /* Make everything full-width */
+  }
 
-    padding: 20px;
-    text-align: left;
-}
-.highlights-item2 {
-
-    padding: 20px;
-    text-align: left;
-}
-.highlights-item3 {
-
-    padding: 20px;
-    text-align: left;
+  .highlights-item1,
+  .highlights-item2,
+  .highlights-item3 {
+      grid-row: auto; /* Let items adjust naturally */
+  }
 }
 
 
@@ -260,44 +264,27 @@ img.responsive {                /*Ensuring images scale down on smaller screens*
 .testimonials-container {
     display: grid;
     background-color: #ced35f;
-    grid-template-rows: auto 1fr; /* Two equal columns */
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px; /* Space between items */
-    .h1 {
-        grid-row: 1; /* Place in the first row */
-      }
-      .testimonials-item1 {
-        grid-row: 2; /* Place in the second row */
-      }
-      .testimonials-item2 {
-        grid-row: 2; /* Also place in the second row */
-      }
-      .testimonials-item3 {
-        grid-row: 2; /* Place in the second row */
-      }
-      .testimonials-item4 {
-        grid-row: 2; /* Also place in the second row */
-      }
+    padding: 20px;
 }
 
-.testimonials-item1 {
-    background-color: #b0afaf;
-    padding: 20px;
-    text-align: left;
+.testimonials-container h1{
+  grid-row: 1;
 }
-.testimonials-item2 {
-    background-color: #b0afaf;
-    padding: 20px;
-    text-align: left;
+
+.testimonials-container p{
+  font-size: 1rem;
 }
-.testimonials-item3 {
-    background-color: #b0afaf;
-    padding: 20px;
-    text-align: left;
-}
+
+.testimonials-item1,
+.testimonials-item2,
+.testimonials-item3,
 .testimonials-item4 {
     background-color: #b0afaf;
     padding: 20px;
     text-align: left;
+    border-radius:10px;
 }
 
 .mini-testimonials-container {
@@ -305,51 +292,140 @@ img.responsive {                /*Ensuring images scale down on smaller screens*
     align-items: center;
 }
 
+#profile-pic{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#star-rating{
+  width: 150px;
+  height:auto;
+}
 
+  @media screen and (max-width: 768px) {
+    .testimonials-container {
+        grid-template-columns: 1fr; /* Full width for mobile */
+        grid-template-rows: auto;
+    }
+
+    .testimonials-item1,
+    .testimonials-item2,
+    .testimonials-item3,
+    .testimonials-item4 {
+        width: 90%;
+        margin: auto;
+        text-align: center; /* Improve readability */
+    }
+
+    #profile-pic {
+        width: 40px;
+        height: 40px;
+    }
+
+    #star-rating {
+        width: 100px;
+    }
+
+    .testimonials-container p {
+        font-size: 1.2rem;
+    }
+}
 
 .about-container {
     display: grid;
     background-color:#a8b87d;
-    grid-template-rows: auto 1fr; /* Two equal columns */
-    gap: 10px; /* Space between items */
-
-      .about-item1 {
-        grid-row: 2; /* Place in the second row */
-      }
-      .about-item2 {
-        grid-row: 2; /* Also place in the second row */
-      }
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+    align-items: center;
 
 }
 
 .about-item1 {
-    padding: 20px;
-    text-align: center;
+  grid-column: 1;
+  padding: 20px;
+  text-align: left;
 }
 .about-item2 {
-    padding: 20px;
-    text-align: left;
+  grid-column: 2; /* Also place in the second row */
+  display: flex;
+  justify-content: center;
 }
-
 
 .relative-container{                  /*For overlapping images*/
     position: relative;
+    width: fit-content;
+    margin: auto;
 }
 
-.image1 {                 /*Image for the About Section*/
-    position: relative;
-    height: 150px;
-    width: 250px;
+.image1 {
+  width: 100%;
+  max-width: 300px; /* Control size */
+  height: auto;
+  position: relative; /* Base position */
+}
+
+.image2 {
+  width: 80%;
+  max-width: 250px;
+  height: auto;
+  position: absolute; /* Places image2 directly over image1 */
+  top: 30px; /* Adjust overlap */
+  left: 50%; /* Shift horizontally */
+  transform: translateX(-50%);
+  opacity: 0.9; /* Optional transparency for better effect */
+}
+
+@media screen and (min-width: 1024px) {
+  .image2 {
+    top: 40px; /* Reduces excessive overlap */
+    width: 60%; /* Limits scaling */
+    max-width: 220px; /* Ensures consistency */
+  }
+}
+
+
+
+/* Ensure content stacks on smaller screens */
+@media screen and (max-width: 768px) {
+  .relative-container {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center elements */
   }
 
-.image2 {                  /* Image for the About Section */
+  .image1, .image2 {
+    width: 90%;
+    max-width: 250px;
+  }
+
+  .image2 {
     position: absolute;
-    top: 110px;
-    left: 340px;
-    height: 150px;
-    width: 250px;
+    top: 20px; /* Reduce overlap */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+  }
+
+
+
+h1 {
+  font-size: 4vw; /* Adjust based on viewport width */
+}
+
+h2 {
+  font-size: 3vw;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
 
 }
+
+
+
 
 .footer-container{
         display: grid;

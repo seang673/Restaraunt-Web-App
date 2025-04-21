@@ -4,7 +4,6 @@ import lllogo2 from "/Users/seang/CouseraProj/my-app/src/Images/LLLogo2.webp";
 
 const Nav = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-
     const toggleMenu = () =>
     {
       setMenuOpen(!menuOpen);

@@ -10,7 +10,6 @@ import About from './Components/About';
 
 function App() {
   return (
-
     <>
       <Nav/>
       <Main/>
@@ -19,7 +18,6 @@ function App() {
       <Testimonials/>
       <Footer/>
     </>
-
   );
 }
 
